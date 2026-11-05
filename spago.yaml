@@ -1,0 +1,27 @@
+package:
+  name: simple-i18n
+  build:
+    strict: true
+  publish:
+    version: 2.0.2
+    license: MIT
+    location:
+      githubOwner: oreshinya
+      githubRepo: purescript-simple-i18n
+  dependencies:
+    - foreign-object: ">=4.1.0 <5.0.0"
+    - maybe: ">=6.0.0 <7.0.0"
+    - prelude: ">=6.0.1 <7.0.0"
+    - record: ">=4.0.0 <5.0.0"
+    - record-extra: ">=5.0.1 <6.0.0"
+    - typelevel-prelude: ">=7.0.0 <8.0.0"
+    - unsafe-coerce: ">=6.0.0 <7.0.0"
+  test:
+    main: Test.Main
+    strict: true
+    dependencies:
+      - effect: ">=4.0.0 <5.0.0"
+      - test-unit: ">=17.0.0 <18.0.0"
+workspace:
+  buildOpts:
+    censorLibraryWarnings: all
